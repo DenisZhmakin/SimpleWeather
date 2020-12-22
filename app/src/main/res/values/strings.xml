@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">SimpleWeather</string>
+    <string name="action_weather">Текущая погода</string>
+    <string name="action_forecast">Прогноз погоды</string>
+    <string name="city_name">Город:</string>
+    <string name="current_date">Дата:</string>
+    <string name="current_temp">Температура:</string>
+    <string name="feels_like">Ощущается как:</string>
+    <string name="pressure">Давление:</string>
+    <string name="humidity">Влажность воздуха:</string>
+    <string name="visibility">Видимость:</string>
+    <string name="wind_speed">Cкорость ветра:</string>
+    <string name="clouds">Облачность:</string>
+    <string name="load">Загрузить/Обновить</string>
+    <string name="day_temp">Дневная темп.:</string>
+    <string name="evening_temp">Вечерняя темп.:</string>
+    <string name="morning_temp">Утренняя темп.</string>
+    <string name="night_temp">Ночная темп.:</string>
 </resources>

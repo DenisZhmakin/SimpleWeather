@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/main_spinner"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        />
     <TableRow>
         <TextView
             android:layout_width="wrap_content"
@@ -11,11 +19,11 @@
             android:layout_margin="11dp"
             android:layout_weight="0.5"
             android:gravity="left"
-            android:text="@string/city_name"
+            android:text="@string/current_date"
             android:textSize="19sp" />
 
         <TextView
-            android:id="@+id/city_name"
+            android:id="@+id/current_date_s"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="11dp"
@@ -29,29 +37,31 @@
             android:gravity="left"
             android:layout_margin="11dp"
             android:textSize="19sp"
-            android:text="@string/current_date"
+            android:text="@string/morning_temp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <TextView
-            android:id="@+id/current_date"
+            android:id="@+id/morning_temp"
             android:layout_weight="0.5"
             android:gravity="center"
             android:layout_margin="11dp"
             android:textSize="19sp"
-            android:layout_width="wrap_content"
+            android:layout_column="1"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </TableRow>
+
     <TableRow>
         <TextView
             android:layout_weight="0.5"
             android:gravity="left"
             android:layout_margin="11dp"
             android:textSize="19sp"
-            android:text="@string/current_temp"
+            android:text="@string/day_temp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <TextView
-            android:id="@+id/current_temp"
+            android:id="@+id/day_temp"
             android:layout_weight="0.5"
             android:gravity="center"
             android:layout_margin="11dp"
@@ -66,12 +76,29 @@
             android:gravity="left"
             android:layout_margin="11dp"
             android:textSize="19sp"
-            android:text="@string/feels_like"
+            android:text="@string/evening_temp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
-
         <TextView
-            android:id="@+id/feels_like"
+            android:id="@+id/evening_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="11dp"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:textSize="19sp" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_weight="0.5"
+            android:gravity="left"
+            android:layout_margin="11dp"
+            android:textSize="19sp"
+            android:text="@string/night_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/night_temp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="11dp"
@@ -89,7 +116,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <TextView
-            android:id="@+id/pressure"
+            android:id="@+id/pressure_s"
             android:layout_weight="0.5"
             android:gravity="center"
             android:layout_margin="11dp"
@@ -108,26 +135,7 @@
             android:layout_height="wrap_content" />
 
         <TextView
-            android:id="@+id/humidity"
-            android:layout_weight="0.5"
-            android:gravity="center"
-            android:layout_margin="11dp"
-            android:textSize="19sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-    </TableRow>
-    <TableRow>
-        <TextView
-            android:layout_weight="0.5"
-            android:gravity="left"
-            android:layout_margin="11dp"
-            android:textSize="19sp"
-            android:text="@string/visibility"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <TextView
-            android:id="@+id/visibility"
+            android:id="@+id/humidity_s"
             android:layout_weight="0.5"
             android:gravity="center"
             android:layout_margin="11dp"
@@ -146,7 +154,7 @@
             android:layout_height="wrap_content" />
 
         <TextView
-            android:id="@+id/wind_speed"
+            android:id="@+id/wind_speed_s"
             android:layout_weight="0.5"
             android:gravity="center"
             android:layout_margin="11dp"
@@ -165,7 +173,7 @@
             android:layout_height="wrap_content" />
 
         <TextView
-            android:id="@+id/clouds"
+            android:id="@+id/clouds_s"
             android:layout_weight="0.5"
             android:gravity="center"
             android:layout_margin="11dp"
