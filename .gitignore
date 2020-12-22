@@ -228,3 +228,27 @@ fabric.properties
 
 # End of https://www.toptal.com/developers/gitignore/api/android,androidstudio,linux
 
+# Создано https://www.toptal.com/developers/gitignore/api/gradle
+# Отредактируйте на https://www.toptal.com/developers/gitignore?templates=gradle
+
+### Gradle ###
+.gradle
+build /
+
+# Игнорировать конфигурацию графического интерфейса Gradle
+gradle-app.setting
+
+# Избегайте игнорирования файла jar оболочки Gradle (файлы .jar обычно игнорируются)
+! gradle-wrapper.jar
+
+# Кэш проекта
+.gradletasknamecache
+
+# # Работайте вокруг https://youtrack.jetbrains.com/issue/IDEA-116898
+# gradle / wrapper / gradle-wrapper.properties
+
+### Патч Gradle ###
+** / build /
+
+# Конец https://www.toptal.com/developers/gitignore/api/gradle
+
