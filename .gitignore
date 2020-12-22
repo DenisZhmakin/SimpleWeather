@@ -1,6 +1,6 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/android,androidstudio,linux
-# Edit at https://www.toptal.com/developers/gitignore?templates=android,androidstudio,linux
+# Created by https://www.toptal.com/developers/gitignore/api/android,androidstudio
+# Edit at https://www.toptal.com/developers/gitignore?templates=android,androidstudio
 
 ### Android ###
 # Built application files
@@ -96,21 +96,6 @@ output.json
 # Replacement of .externalNativeBuild directories introduced
 # with Android Studio 3.5.
 
-### Linux ###
-*~
-
-# temporary files which can be created if a process still has a handle open of a deleted file
-.fuse_hidden*
-
-# KDE directory preferences
-.directory
-
-# Linux trash folder which might appear on any partition or disk
-.Trash-*
-
-# .nfs files are created when an open file is removed but is still being accessed
-.nfs*
-
 ### AndroidStudio ###
 # Covers files to be ignored for android development using Android Studio.
 
@@ -141,6 +126,7 @@ output.json
 /*/*/build
 /*/*/production
 *.ipr
+*~
 *.swp
 
 # Keystore files
@@ -226,29 +212,4 @@ fabric.properties
 
 !/gradle/wrapper/gradle-wrapper.jar
 
-# End of https://www.toptal.com/developers/gitignore/api/android,androidstudio,linux
-
-# Создано https://www.toptal.com/developers/gitignore/api/gradle
-# Отредактируйте на https://www.toptal.com/developers/gitignore?templates=gradle
-
-### Gradle ###
-.gradle
-build /
-
-# Игнорировать конфигурацию графического интерфейса Gradle
-gradle-app.setting
-
-# Избегайте игнорирования файла jar оболочки Gradle (файлы .jar обычно игнорируются)
-! gradle-wrapper.jar
-
-# Кэш проекта
-.gradletasknamecache
-
-# # Работайте вокруг https://youtrack.jetbrains.com/issue/IDEA-116898
-# gradle / wrapper / gradle-wrapper.properties
-
-### Патч Gradle ###
-** / build /
-
-# Конец https://www.toptal.com/developers/gitignore/api/gradle
-
+# End of https://www.toptal.com/developers/gitignore/api/android,androidstudio
